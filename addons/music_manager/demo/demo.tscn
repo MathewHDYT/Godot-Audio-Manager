@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/music_manager/demo/demo.gd" type="Script" id=1]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Button1" type="Button" parent="."]
+text = "Music 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1_2" type="Button" parent="."]
+margin_left = 255.461
+margin_top = 8.24069
+margin_right = 379.461
+margin_bottom = 28.2407
+text = "Music 1 (delayed)"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 86.1527
+margin_top = 2.24746
+margin_right = 148.153
+margin_bottom = 22.2475
+text = "Music 2"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 177.549
+margin_top = 3.74577
+margin_right = 239.549
+margin_bottom = 23.7458
+text = "Music 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StopButton" type="Button" parent="."]
+margin_left = 101.885
+margin_top = 47.9458
+margin_right = 202.885
+margin_bottom = 67.9458
+text = "Stop (smooth)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StopButtonNow" type="Button" parent="."]
+margin_left = 0.749146
+margin_top = 45.6984
+margin_right = 78.7491
+margin_bottom = 65.6984
+text = "Stop (now)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button1" to="." method="_on_Button1_pressed"]
+[connection signal="pressed" from="Button1_2" to="." method="_on_Button1_2_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="StopButton" to="." method="_on_StopButton_pressed"]
+[connection signal="pressed" from="StopButtonNow" to="." method="_on_StopButtonNow_pressed"]
