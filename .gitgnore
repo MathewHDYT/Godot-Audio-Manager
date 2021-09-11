@@ -390,3 +390,7 @@ gcov.css
 # httpsclangd.llvm.org cache folder
 .clangd
 .cache
+
+# Build folder
+[Bb]uild/
+[Bb]uilds/

@@ -16,14 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="MusicManager"
-run/main_scene="res://addons/music_manager/demo/demo.tscn"
+run/main_scene="res://addons/AudioManager/demo/demo.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-MusicManager="*res://addons/music_manager/audio_manager.gd"
-SaveSystem="*res://addons/music_manager/save_system.gd"
-SfxManager="*res://addons/music_manager/SFXManager.gd"
+MusicManager="*res://addons/AudioManager/MusicManager.gd"
+SfxManager="*res://addons/AudioManager/SfxManager.gd"
 
 [rendering]
 
